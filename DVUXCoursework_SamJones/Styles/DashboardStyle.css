@@ -1,0 +1,550 @@
+/* Universal css used in the Dashboard webpage */
+
+/* body and container of page */
+body{
+	font-family:'Courier New' ,monospace;
+	font-weight: normal;
+	margin: 0%;
+}
+p{
+	margin: 0;
+	padding: 0;
+}
+h5{
+	margin: 0;
+	padding: 0;
+}
+.Container{
+	width: 100%;
+	background-color: white;
+}
+/*  */
+
+.Title{
+	background-color: #90c554;
+	text-align: center;
+	padding:20px;
+}
+
+.Title a{
+	text-decoration: none;
+	font-size: 3em;
+	color: #000000;
+	font-weight: bold;
+
+}
+
+.MainBody{
+	position: relative;
+	min-height: 51rem;
+	width: 100%;
+	background-color: #ececec;
+	margin-left: 0%;
+	margin-right: 0%;
+}
+
+.DashboardArea {
+	box-sizing: border-box;
+	overflow: hidden;
+	padding: 5px;
+}
+
+.Dropdown{
+	box-sizing: border-box;
+	float: left;
+	width: 20%;
+	margin: 5px;
+}
+
+.Filter{
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+	padding: 5px;
+	/* height: auto; */
+	min-height: 65rem;
+	border: 1px solid #90c554;
+	background-color: white;
+}
+
+#FilterContent{
+	display: block;
+}
+
+#FilterTitleSection{
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+    height: 80px;
+	background-color: #90c554;
+	padding: 1px;
+	text-align: center;
+	display: block;
+}
+
+.FilterSection{
+    width: 90%;
+    height: auto;
+    box-sizing: border-box;
+	background-color: white;
+	margin: 5px;
+	padding-top: 15px;
+	overflow-y: auto;
+	margin-bottom: 5px;
+}
+
+/* Checkbox List Stylings */
+
+#CheckboxFilter input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+	cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+	accent-color: #4EB072;
+}
+
+ul {
+    margin: 0px;
+    float: left;
+    padding: 1px;
+    width: 95%;
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+}
+
+/* End of Checkbox List Stylings */
+
+/* Slider stylings */
+
+.slider {
+	appearance: none;
+	width: 100%;
+	height: 25px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+  }
+
+  .slider:hover {
+	opacity: 1;
+  }
+
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	background: #4EB072;
+	cursor: pointer;
+  }
+
+  .slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: #4EB072;
+	cursor: pointer;
+  }
+
+/* End of slider stylings */
+
+/* Toggle Switch stylings */
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 33px;
+	margin: 5px;
+  }
+  
+  .switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  
+  .toggle {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  .toggle:before {
+	position: absolute;
+	content: "";
+	height: 25px;
+	width: 25px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  
+  input:checked + .toggle {
+	background-color: #4EB072;
+  }
+  
+  input:focus + .toggle {
+	box-shadow: 0 0 1px #4EB072;
+  }
+  
+  input:checked + .toggle:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+  }
+
+/* End of Toggle Switch stylings */
+
+/* Select dropdown stylings */
+
+.DropdownSelect {
+	width: 90%;
+	position: relative;
+}
+
+.ProductSelect {
+	width: 100%;
+	padding: 8px;
+	margin: 3px;
+	font-size: medium;
+	font-family: 'Courier New' ,monospace;
+	border: 2px solid RGBA(78, 176, 114, 0.7);
+	border-radius: 5px;
+	background-color: #f8f8f8;
+	cursor: pointer;
+}
+
+.ProductSelect:hover{
+	border: 2px solid RGBA(78, 176, 114, 1);
+}
+
+.ProductSelect option{
+	background-color:#4EB072;
+}
+
+datalist {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	writing-mode: vertical-lr;
+	width: 100%;
+}
+
+option {
+	padding: 0;
+}
+
+input[type="range"] {
+	width: 100%;
+	margin: 0;
+}
+/* End of dropdown stylings */
+
+.SubmitButton{
+	background-color: rgb(80, 236, 106);
+	border-radius: 100px 100px 100px 100px;
+	width: fit-content;
+	height: fit-content;
+	padding: 3px 6px 3px 6px;
+	margin: 15px;
+	font-size: 20px;
+	font-family: inherit;
+	cursor: pointer;
+	float: right;
+}
+
+#LeftSide, #RightSide {
+	box-sizing: border-box;
+	float: left;
+	width: 38.5%;
+	min-height: 65rem;
+	margin: 5px;
+	border: 1px solid #90c554;
+	background-color: white;
+}
+
+.ProductAreaPop{
+	display: block;
+	position: fixed;
+	z-index: 1; /* Sit on top of the content */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close{
+	float: right;
+	color: #000;
+	font-size: 28px;
+	cursor: pointer;
+}
+
+.RDIProductsArea{
+	background-color: white;
+	box-sizing: border-box;
+	margin: auto;
+	padding: 10px;
+	border: 6px #888 outset;
+	border-radius: 30px 0px 30px 0px;
+	width: 1000px;
+	height: auto;
+	position: relative;
+	top: 0;
+}
+
+/* Nutritional Info */
+.DRITable{
+	box-sizing: border-box;
+	width: 100%;
+	box-shadow: 0px 2px 15px 5px lightgray;
+	border-bottom: 2px solid #009879;
+	table-layout: fixed;
+}
+
+.DRITable th,td{
+	padding: 10px 5px;
+    border-bottom: 1px solid #dddddd;
+	width: 25%;
+}
+
+
+.DRITable th {
+    background-color: #009879;
+    color: white;
+    font-weight: bold;
+}
+
+.DRITable tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+/*  */
+
+.HighlightedProduct{
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.HighlightedDataArea{
+	box-sizing: border-box;
+	width: 100%;
+	height: 8rem;
+
+	display: flex;
+    justify-content: center;
+}
+
+.HighlightedData{
+	box-sizing: border-box;
+	float: left;
+	width: 90px;
+	margin: 2px;
+	height: auto;
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: white;
+	text-align: center;
+}
+
+.KeyDataTitle{
+	padding: 1px;
+	border-radius: 20px 20px 0px 0px;
+	height: 40%;
+}
+
+.KeyDataPoint{
+	padding: 10px;
+}
+
+.ChartWrapper{
+	box-sizing: border-box;
+	float: left;
+	width: 100%;
+	padding: 5px;
+	height: 49.5rem;
+}
+
+/* help pop up stylings */
+
+/* Popup container */
+.popup {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	margin: 5px;
+  }
+
+  .popup i {
+    font-size: 28px;
+}
+
+  /* The actual popup */
+  .popuptext {
+	visibility: hidden;
+	width: 360px;
+	background-color: #555;
+	color: white;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 120%;
+	left: 50%;
+	margin-left: -20px;
+	box-shadow: 10px 10px 5px 12px #555;
+  }
+
+  /* Popup arrow */
+  .popuptext::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 5%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #555 transparent;
+}
+
+  /* this class toggles to hide or show the popup */
+  .popup:hover .popuptext {
+	visibility: visible;
+	-webkit-animation: fadeIn 0.75s;
+	animation: fadeIn 0.75s;
+  }
+
+
+  @-webkit-keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+  }
+
+  @keyframes fadeIn {
+	from {opacity: 0;}
+	to {opacity: 1;}
+  }
+
+/* end of pop up stylings */
+
+/* Accordion */
+
+
+
+.Accordion{
+	margin: 5px;
+}
+
+.show{
+	display: block;
+}
+
+.hide{
+	display: none;
+}
+
+.Accordion i{
+	font-size: 28px;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+	cursor: pointer;
+
+}
+
+.AccordionText{
+	width: 98%;
+	background-color: #ececec;
+	text-align: center;
+	padding: 8px;
+}
+
+/* End Of Accordion */
+
+  /* footer stylings */
+  footer{
+	position:static;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 5px;
+	margin:auto;
+	margin-top: 10em;
+	border: #555 solid 4px;
+	border-radius: 30px;
+	background-color: #ddd;
+	color: white;
+	text-align: center;
+}
+/* individual parts inside of the footer */
+.FooterBoxes{
+	width: 30%;
+	display: inline-block;
+	box-sizing: border-box;
+	background-color: #ececec;
+	color: #000000;
+	padding: 5px 2px 5px 2px;
+	border: #646464 solid 2px;
+	border-radius: 30px;
+}
+/* mobile responsive */
+  @media (max-width:1100px) {
+	.Container{
+		background-color: white;
+	}
+	.MainBody{
+		width: 100%;
+		margin: 0;
+		padding: 10px 0px 10px 0px;
+	}
+	#LeftSide, #RightSide {
+		width: 100%;
+		margin: 0px 0px 20px 0px;
+	}
+	.Dropdown{
+		width: 100%;
+		margin: 0px 0px 20px 0px;
+	}
+	footer{
+		width: 100%;
+	}
+	.RDIProductsArea{
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		
+	}
+	.ProductAreaPop{
+		padding: 0;
+	}
+}
+@media (max-width:500px) {
+	.FooterBoxes{
+		width:100%;
+		padding: 5px;
+	}
+}
